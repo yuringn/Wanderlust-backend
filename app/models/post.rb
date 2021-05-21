@@ -4,9 +4,9 @@ class Post < ApplicationRecord
   has_many :comments, dependent: :destroy
   has_many :likes, dependent: :destroy
 
-  def username
-    self.user.username
-  end
+  # def username
+  #   self.user.username
+  # end
 
   def likes_count
     self.likes.length
